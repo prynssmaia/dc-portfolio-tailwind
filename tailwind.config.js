@@ -1,5 +1,7 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -11,7 +13,14 @@ module.exports = {
         'badge': '#3F3F51',
         'input-border': '#565666',
         'input': '#2A2A35'
-    }
-  }
-}
+      },
+      fontFamily: {
+        'poppins': ["'Poppins'", 'sans-serif']
+      }
+    },
+  },
+  variants: {
+    extend: {},
+  },
+
 }
